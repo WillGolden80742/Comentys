@@ -2,7 +2,7 @@
    
     class StringT {
         private $value;
-        private $regex = '/[^[:alpha:]_0-9]/';
+        private $regex = '/[^[:alpha:]_0-9.:\/]/';
         function __construct($value) {
             $this->value = preg_replace($this->regex,'',$value);
         }
